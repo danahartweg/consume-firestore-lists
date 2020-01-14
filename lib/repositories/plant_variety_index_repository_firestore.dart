@@ -11,7 +11,6 @@ class PlantVarietyIndexRepositoryFirestore
 
   @override
   Stream<List<PlantVarietyIndexEntry>> indexEntries(String homesteadId) {
-    print(plantVarietyIndexQuery);
     return plantVarietyIndexQuery
         .where(
           'parentId',
